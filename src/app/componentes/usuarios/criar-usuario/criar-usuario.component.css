@@ -78,9 +78,21 @@
     font-size: 12px;
   }
 
-  @media (max-width: 575px) {
+
+  /* @media (max-width: 500px) {
     .criar-usuarios form .input1 {
-        width: 60vh;
+        width: 400px;
+    }
+  } */
+  @media (max-width: 460px) {
+    .criar-usuarios form .input1 {
+        width: 30vh;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .criar-usuarios form .input1 {
+        width: 45vh;
     }
   }
   @media (min-width: 576px) {
