@@ -78,6 +78,11 @@
     font-size: 12px;
   }
 
+  @media (max-width: 575px) {
+    .criar-usuarios form .input1 {
+        width: 60vh;
+    }
+  }
   @media (min-width: 576px) {
     .criar-usuarios form .input1 {
         width: 415px;
