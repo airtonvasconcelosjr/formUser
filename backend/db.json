@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "nome": "Airton Teixeira Vasconcelos Júnior",
+      "email": "airton.vasconcelosjr@gmail.com",
+      "telefone": "61992084411",
+      "cep": "72236020",
+      "logradouro": "QNP 30 Conjunto T",
+      "bairro": "Ceilândia Sul (Ceilândia)",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "id": 1
+    },
+    {
+      "nome": "Laís Gonçalves da Silva",
+      "email": "lais.1204@gmail.com",
+      "telefone": "61983350472",
+      "cep": "72610111",
+      "logradouro": "Quadra 201 Conjunto 11",
+      "bairro": "Recanto das Emas",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "id": 2
+    }
+  ]
+}

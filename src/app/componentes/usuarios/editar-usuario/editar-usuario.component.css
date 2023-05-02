@@ -1,0 +1,64 @@
+.acoes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botao {
+    margin: 5px;
+    margin-top: 50px;
+  }
+  
+  .editar-usuarios {
+    padding: 2rem 0;
+  }
+  
+  .editar-usuarios form {
+    background: #C4EDFF;
+  
+    border: none;
+    border-radius: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2rem;
+  }
+  
+  .editar-usuarios form label {
+    color: #154580;
+    font-weight: bold;
+    margin: 0 0 1rem;
+  }
+  
+  .editar-usuarios form .input {
+    border: none;
+    height: 40px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin: 0.5rem 0 2rem;
+  }
+  
+  
+  .editar-usuarios form .textarea {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin: 0.5rem 0 2rem;
+  }
+  
+  .conteudo{
+    margin-top: 7px;
+  }
+  
+  .label{
+    color: #154580;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  button.disabled {
+    background-color: gray;
+    color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }

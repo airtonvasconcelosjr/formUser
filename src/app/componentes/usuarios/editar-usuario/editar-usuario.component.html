@@ -1,0 +1,108 @@
+<section class="container editar-usuarios ff-inter">
+    <header class="header">
+      <h2><br>Editar usuário:</h2>
+    </header>
+    <form #f="ngForm">
+      <label for="nome">Nome</label>
+      <input
+        type="textarea"
+        class="input"
+        id="nome"
+        name="nome"
+        placeholder="Digite o nome"
+        required
+        [(ngModel)]="usuario.nome"
+      >
+      <label for="email">Email</label>
+      <input
+        type="text"
+        class="input"
+        id="email"
+        name="email"
+        placeholder="Digite seu melhor email"
+        required
+        [(ngModel)]="usuario.email"
+      >
+      <label for="telefone">Telefone</label>
+      <input
+        type="text"
+        class="input"
+        id="telefone"
+        name="telefone"
+        placeholder="Digite a telefone ou fonte"
+        required
+        [(ngModel)]="usuario.telefone"
+      >
+      <label for="cep">CEP</label>
+      <input
+        type="text"
+        class="input"
+        id="cep"
+        name="cep"
+        placeholder="Digite a cep ou fonte"
+        [(ngModel)]="usuario.cep"
+        required
+        (blur)="buscarEnderecoPorCep()"
+      >
+      <label for="Logradouro">Logradouro</label>
+      <input
+        type="text"
+        class="input"
+        id="Logradouro"
+        name="Logradouro"
+        placeholder="Digite a Logradouro"
+        readonly
+        [(ngModel)]="usuario.logradouro"
+      >
+      <label for="bairro">Bairro</label>
+      <input
+        type="text"
+        class="input"
+        id="bairro"
+        name="bairro"
+        placeholder="Digite a bairro ou fonte"
+        readonly
+        [(ngModel)]="usuario.bairro"
+      >
+      <label for="cidade">Cidade</label>
+      <input
+        type="text"
+        class="input"
+        id="cidade"
+        name="cidade"
+        placeholder="Digite a cidade ou fonte"
+        readonly
+        [(ngModel)]="usuario.cidade"
+      >
+      <label for="uf">UF</label>
+      <input
+        type="text"
+        class="input"
+        id="uf"
+        name="uf"
+        placeholder="Digite a uf ou fonte"
+        readonly
+        [(ngModel)]="usuario.uf"
+      >
+      <div *ngIf="f.valid" class="dados">
+        <p class="conteudo"><label for="nome">Nome: </label>{{ usuario.nome }}</p>
+        <p class="conteudo"><label for="nome">Email: </label>{{ usuario.email }}</p>
+        <p class="conteudo"><label for="nome">Telefone: </label>{{ usuario.telefone }}</p>
+        <p class="conteudo"><label for="nome">CEP: </label>{{ usuario.cep }}</p>
+        <p class="conteudo"><label for="nome">Logradouro: </label>{{ usuario.logradouro }}</p>
+        <p class="conteudo"><label for="nome">Bairro: </label>{{ usuario.bairro }}</p>
+        <p class="conteudo"><label for="nome">Cidade: </label>{{ usuario.cidade }}</p>
+        <p class="conteudo"><label for="nome">UF: </label>{{ usuario.uf }}</p>
+        <div>
+          <p class="label">
+            Os dados informados estão corretos?
+          </p>
+        </div>
+    </div>
+    
+      <div class="acoes">
+        <button [ngClass]="{ 'botao': true, 'disabled': f.invalid }" (click)="editarUsuario()" [disabled]="f.invalid">Salvar</button>
+        <button (click)="cancelar()" class="botao">Cancelar</button>
+      </div>
+    </form>
+  </section>

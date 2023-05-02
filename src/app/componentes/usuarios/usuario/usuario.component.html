@@ -1,0 +1,18 @@
+<div class="usuario f-roboto-mono" [ngClass]="larguraUsuario()">
+  <p class="conteudo"><label for="nome">Nome: </label>{{ usuario.nome }}</p>
+  <p class="conteudo"><label for="nome">Email: </label>{{ usuario.email }}</p>
+  <p class="conteudo"><label for="nome">Telefone: </label>{{ usuario.telefone }}</p>
+  <p class="conteudo"><label for="nome">CEP: </label>{{ usuario.cep }}</p>
+  <p class="conteudo"><label for="nome">Logradouro: </label>{{ usuario.logradouro }}</p>
+  <p class="conteudo"><label for="nome">Bairro: </label>{{ usuario.bairro }}</p>
+  <p class="conteudo"><label for="nome">Cidade: </label>{{ usuario.cidade }}</p>
+  <p class="conteudo"><label for="nome">UF: </label>{{ usuario.uf }}</p>
+    <div class="acoes">
+      <button class="botao-editar">
+        <img src="/assets/imagens/icone-editar.png" routerLink="/usuarios/editarUsuario/{{usuario.id}}" alt="Ícone de editar">
+      </button>
+      <button class="botao-excluir" routerLink="/usuarios/excluirUsuario/{{usuario.id}}">
+        <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+      </button>
+    </div>
+  </div>
