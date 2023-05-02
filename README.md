@@ -5,6 +5,10 @@ This is a simple app made from user registration courses, using the address sear
 Domains                                                                                                                                          
 https://form-user-olive.vercel.app
 
+To run database:
+cd backend / npm start
+
+
 
 ![image](https://user-images.githubusercontent.com/101413097/235575161-31500b19-10d5-4ef8-90a7-0eb62e1198d4.png)
 
