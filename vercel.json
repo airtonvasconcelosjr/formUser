@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "angular.json",
+        "use": "@vercel/static-build"
+      },
+      {
+        "src": "backend/package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/.*",
+        "dest": "http://localhost:3000"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "env": {
+      "PORT": 3000
+    }
+  }
+  
