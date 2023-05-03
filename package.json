@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "json-server --watch db.json --port 3000 || ng serve",
-    "build": "ng build && json-server --watch db.json --port 3000",
+    "start": "json-server --watch backend/db.json --port 3000 || ng serve",
+    "build": "ng build && json-server --watch backend/db.json --port 3000",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
