@@ -1,6 +1,6 @@
 {
   "name": "form-user",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "json-server --watch backend/db.json --port $PORT || ng serve",
