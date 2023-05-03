@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "json-server --watch db.json --port $PORT || ng serve",
+    "start": "json-server --watch backend/db.json --port $PORT || ng serve",
     "build": "ng build && json-server --watch db.json --port $PORT",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
